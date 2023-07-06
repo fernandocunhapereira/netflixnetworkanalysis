@@ -14,7 +14,7 @@ from IPython.core.display import display, HTML
 import pandas as pd
 import csv
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import nxviz as nv
 import networkx as nx
 import streamlit as st
