@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1BZz051R4kWsiS36tONU4sDcF6FrvQa4Q
 """
 
-#!pip install networkx pyvis nxviz streamlit -U --quiet
+"""!pip install networkx pyvis nxviz streamlit -U --quiet"""
 
 from pyvis.network import Network
 from IPython.core.display import display, HTML
