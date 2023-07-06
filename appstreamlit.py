@@ -13,7 +13,7 @@ import pandas as pd
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
-import nxviz as nv
+# import nxviz as nv
 import networkx as nx
 import streamlit as st
 import streamlit.components.v1 as components
