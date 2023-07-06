@@ -102,9 +102,13 @@ display(HTML('netflix_subnetwork.html'))
 
 #Save and read graph as HTML file (on Streamlit Sharing)
 # try:
-path = '/tmp'
+"""path = '/tmp'
 netflix_subnetwork.save_graph(f'{path}/pyvis_graph.html')
-HtmlFile = open(f'{path}/pyvis_graph.html', 'r', encoding='utf-8')
+HtmlFile = open(f'{path}/pyvis_graph.html', 'r', encoding='utf-8')"""
+
+HtmlFile = open("netflix_subnetwork.html", 'r', encoding='utf-8')
+source_code = HtmlFile.read()
+components.html(source_code, height = 1200,width=1000)
 
 # Save and read graph as HTML file (locally)
 """except:
