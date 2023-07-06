@@ -101,16 +101,16 @@ netflix_subnetwork.show('netflix_subnetwork.html')
 display(HTML('netflix_subnetwork.html'))
 
 #Save and read graph as HTML file (on Streamlit Sharing)
-try:
-  path = '/tmp'
-  netflix_subnetwork.save_graph(f'{path}/pyvis_graph.html')
-  HtmlFile = open(f'{path}/pyvis_graph.html', 'r', encoding='utf-8')
+# try:
+path = '/tmp'
+netflix_subnetwork.save_graph(f'{path}/pyvis_graph.html')
+HtmlFile = open(f'{path}/pyvis_graph.html', 'r', encoding='utf-8')
 
 # Save and read graph as HTML file (locally)
-except:
+"""except:
   path = '/html_files'
   netflix_subnetwork.save_graph(f'{path}/pyvis_graph.html')
   HtmlFile = open(f'{path}/pyvis_graph.html', 'r', encoding='utf-8')
-
-    # Load HTML file in HTML component for display on Streamlit page
+"""
+# Load HTML file in HTML component for display on Streamlit page
 components.html(HtmlFile.read(), height=435)
