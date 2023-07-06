@@ -7,14 +7,14 @@ Original file is located at
     https://colab.research.google.com/drive/1BZz051R4kWsiS36tONU4sDcF6FrvQa4Q
 """
 
-"""!pip install networkx pyvis nxviz streamlit -U --quiet"""
+!pip install networkx pyvis nxviz streamlit
 
 from pyvis.network import Network
 from IPython.core.display import display, HTML
 import pandas as pd
 import csv
 import numpy as np
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import nxviz as nv
 import networkx as nx
 import streamlit as st
