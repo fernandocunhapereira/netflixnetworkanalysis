@@ -5,26 +5,26 @@
   "logo": {
     "file": "",
     "link": "",
-    "text": "Patrick"
+    "text": "Fernando Pereira"
   },
   "text": {
-    "more": "Wikipedia Network of the terms with complex Networks",
-    "intro": "Wikipedia Network of the terms with complex Networks",
-    "title": ""
+    "more": "",
+    "intro": "O grafo demonstra todos os atores que contracenaram entre si nos filmes lançados em 2019 na Netflix",
+    "title": "Atores que contracenaram em 2019"
   },
   "legend": {
-    "edgeLabel": "links",
-    "colorLabel": "Modulos",
-    "nodeLabel": "Term of Wikipedia"
+    "edgeLabel": "Contracenar",
+    "colorLabel": "Filmes",
+    "nodeLabel": "Atores"
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": "Modularity Class",
-    "hoverBehavior": "dim"
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "default"
   },
   "informationPanel": {
-    "groupByEdgeDirection": true,
-    "imageAttribute": "Label"
+    "groupByEdgeDirection": false,
+    "imageAttribute": false
   },
   "sigma": {
     "drawingProperties": {
