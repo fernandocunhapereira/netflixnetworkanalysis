@@ -61,7 +61,7 @@ for node in nodesSozinhos: # Excluir nós sozinhos
   grafo.remove_node(node)
 
 def networkx_para_pyvis(G):
-  grafo_gerado=Network(height='400px', width='',heading='', notebook=True, cdn_resources='in_line')
+  grafo_gerado=Network(height='400px', width='100%',heading='', notebook=True, cdn_resources='in_line', bgcolor="#222222", font_color="white", select_menu=True, filter_menu=True)
 
   for node in G:
     grafo_gerado.add_node(node)
@@ -100,21 +100,9 @@ netflix_subnetwork = networkx_para_pyvis(sub_grafo_netflix)
 netflix_subnetwork.show('netflix_subnetwork.html')
 display(HTML('netflix_subnetwork.html'))
 
-#Save and read graph as HTML file (on Streamlit Sharing)
-# try:
-"""path = '/tmp'
-netflix_subnetwork.save_graph(f'{path}/pyvis_graph.html')
-HtmlFile = open(f'{path}/pyvis_graph.html', 'r', encoding='utf-8')"""
-
 HtmlFile = open("netflix_subnetwork.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read()
 components.html(source_code, height = 1200,width=1000)
 
-# Save and read graph as HTML file (locally)
-"""except:
-  path = '/html_files'
-  netflix_subnetwork.save_graph(f'{path}/pyvis_graph.html')
-  HtmlFile = open(f'{path}/pyvis_graph.html', 'r', encoding='utf-8')
-"""
 # Load HTML file in HTML component for display on Streamlit page
 components.html(HtmlFile.read(), height=435)
