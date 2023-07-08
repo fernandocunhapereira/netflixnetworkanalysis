@@ -97,6 +97,8 @@ sub_grafo_netflix = gerar_subgrafo('Anna Camp', grafo) # usando Anna Camp gera o
 
 netflix_subnetwork = networkx_para_pyvis(sub_grafo_netflix)
 
+netflix_subnetwork.show_buttons(filter_=['physics'])
+
 netflix_subnetwork.show('netflix_subnetwork.html')
 display(HTML('netflix_subnetwork.html'))
 
