@@ -1,5 +1,5 @@
 # Análise de Redes
-Este repositório possui um notebook explanatório da análise de uma rede gerada a partir de um dataset da Netflix, além de links para a fonte do dataset e links para os grafos gerados e hospedados nas páginas do github e streamlit
+Este repositório possui um notebook com uma análise exploratória de uma rede gerada a partir de um dataset da Netflix, além de links para a fonte do dataset e links para os grafos gerados e hospedados nas páginas do github e streamlit
 
 LINK DATASET
 https://www.kaggle.com/datasets/shivamb/netflix-shows
