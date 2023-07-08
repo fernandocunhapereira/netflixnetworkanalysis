@@ -61,7 +61,7 @@ for node in nodesSozinhos: # Excluir nós sozinhos
   grafo.remove_node(node)
 
 def networkx_para_pyvis(G):
-  grafo_gerado=Network(height='400px', width='100%',heading='', notebook=True, cdn_resources='in_line', bgcolor="#222222", font_color="white", select_menu=True, filter_menu=True)
+  grafo_gerado=Network(height='750px', width='100%',heading='', notebook=True, cdn_resources='in_line', bgcolor="#222222", font_color="white", select_menu=True, filter_menu=True)
 
   for node in G:
     grafo_gerado.add_node(node)
