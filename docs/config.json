@@ -9,11 +9,11 @@
   },
   "text": {
     "more": "",
-    "intro": "O grafo demonstra todos os atores que contracenaram entre si nos filmes lançados em 2019 na Netflix",
-    "title": "Atores que contracenaram em 2019"
+    "intro": "O grafo demonstra todos os atores que contracenaram entre si nos filmes lançados em 2020 na Netflix",
+    "title": "Atores que contracenaram em 2020"
   },
   "legend": {
-    "edgeLabel": "Contracenar",
+    "edgeLabel": "Contracenou",
     "colorLabel": "Filmes",
     "nodeLabel": "Atores"
   },
