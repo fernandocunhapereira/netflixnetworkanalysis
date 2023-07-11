@@ -50,7 +50,7 @@ for ator in listaAtores:
           if elemento not in grafo:
             grafo.add_node(elemento)
           if ator!= elemento:
-            grafo.add_edge(ator, elemento)
+            grafo.add_edge(ator, elemento, Filme = row[2])
 
 nodesSozinhos = []
 
@@ -68,7 +68,7 @@ def networkx_para_pyvis(G):
 
   eoi = [(u, v) for u, v in G.edges()]
   for u, v in eoi:
-    grafo_gerado.add_edge(u, v)
+    grafo_gerado.add_edge(u, v, Filme=G[u][v]['Filme'])
 
   return grafo_gerado
 
@@ -87,7 +87,7 @@ def gerar_subgrafo(node1, G):
       grafo_gerado.add_node(node)
       visited_nodes.add(node)
       for vizinho in neighbors:
-        grafo_gerado.add_edge(node, vizinho)
+        grafo_gerado.add_edge(node, vizinho, Filme=G[node][vizinho]["Filme"])
       nbrs = [n for n in neighbors if n not in visited_nodes]
       queue = nbrs + queue
 
